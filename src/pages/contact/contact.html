@@ -1,0 +1,61 @@
+<!--
+  Generated template for the ContactPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+      <ion-navbar color="secondary">
+    <ion-title>Contact</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="wrapper centered">
+    <article class="letter">
+      <div class="side">
+        <h1>Contacté moi</h1>
+        <p>
+          <textarea placeholder="Your message"></textarea>
+        </p>
+      </div>
+      <div class="side">
+        <p>
+          <input type="text" placeholder="Your name" >
+        </p>
+        <p>
+          <input type="email" placeholder="Your email" >
+        </p>
+        <p>
+          <button id="sendLetter">Send</button>
+        </p>
+      </div>
+    </article>
+    <div class="envelope front"></div>
+    <div class="envelope back"></div>
+  </div>
+  <p class="result-message centered">Thank you for your message</p>
+ <script>
+   function addClass() {
+     document.body.classList.add("sent");
+   }
+
+   sendLetter.addEventListener("click", addClass);
+ </script>
+  <ion-fab center bottom>
+    <button ion-fab color="danger"><ion-icon name="md-share"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button ion-fab color="primary"><ion-icon name="logo-vimeo"></ion-icon></button><br>
+      <button ion-fab color="secondary"><ion-icon name="logo-facebook"></ion-icon></button>
+    </ion-fab-list>
+    <ion-fab-list side="left">
+      <button ion-fab color="light"><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
+    <ion-fab-list side="right">
+      <button ion-fab color="dark"><ion-icon name="logo-twitter"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
